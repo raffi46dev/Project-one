@@ -1,72 +1,369 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
-
-        <!--=============== REMIXICONS ===============-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing-site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            /* background-color: rgba(128, 128, 128, 0.6); */
+        }
+        .hero-section {
+            background-color: rgba(128, 128, 128, 0.6);
+            height: 100vh;
+        }
+        .wrap-ctn {
+            width: 75%;
+            margin: auto;
+            /* background-color: red; */
+        }
+        ul {
+            list-style: none;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .navs li {
+            display: inline-block;
+            margin: 20px;
+        }
+        .logo {
+            margin: 20px 10px;
+        }
+        .navs {
+            margin-right: 80px;
+        }
+        .heading {
+            font-size: 65px;
+        }
         
-
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
-
-        <title>Responsive clothing ecommerce - Bedimcode</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+        .explore-btn {
+            background-color: transparent;
+            border: none;
+            padding: 4px 8px;
+        }
+        img {
             
-        </header>
+            /* object-fit: contain; */
+        }
+        .main-section {
+            width: 85%;
+            display: flex;
+            justify-content: space-between;
+            margin: 50px auto;
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+        }
+        .main-desc {
+            margin: 20px 0;
+            width: 276px;
+            font-size: 18px;
+        }
+        /* .left-section, .right-section {
+            display: inline-block;
+        } */
+        .home-imgs-ctn {
+            position: relative;
+            margin: 0 70px;
+        }
+        .main-img {
+            width: 300px;
+            height: 400px;
+        }
+        .merging-img {
+            position: absolute;
+            top: 200px;
+            right: 180px;
+            width: auto;
+            height: 300px;
+        }
+        .left-section {
+            margin: auto 0;
+        }
+        .categories-section {
+            background-color: white;
+        }
+        .categories-title {
+            text-align: center;
+            padding: 30px;
+        }
+        .prdct-card {
+            display: inline-block;
+            margin: 12px;
 
-            <!--==================== NEW ====================-->
-            <section class="new section" id="new">
-                
-            </section>
-
-            <!--==================== COLLECTION ====================-->
-            <section class="collection section" id="collection">
-                
-            </section>
-
-            <!--==================== PRODUCTS ====================-->
-            <section class="products section" id="products">
-                
-            </section>
-
-            <!--==================== BRANDS ====================-->
-            <section class="brand section">
-                
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer section">
+        }
+        .prdct-ctn {
+            display: block;
+            margin: auto;
+            height: 100vh;
+            width: inherit;
+        }
+        .prdct-img , .collection-img{
+            width: 250px;
+            height: auto;
+        }
+        .prdct-card-footer {
+            padding: 10px;
+            /* background-color: blue; */
+            position: relative;
+            display: block;
+        }
+        .prdct-card-subtitle {
+            margin: 8px 0 0 0;
+        }
+        .left-card-content {
+            display: inline-block;
+        }
+        .right-card-content {
+            float: right;
+            /* vertical-align: middle; */
+        }
+        .prdct-card-action {
             
-        </footer>
+            vertical-align: middle;
+            margin: 10px 0;
 
-        <!--========== SCROLL UP ==========-->
+        }
+        .collection-content {
 
-        
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+                        /* display: flex; */
+            /* justify-content: center; */
+            /* gap: 40px; */
+            margin: auto;
+            display: block;
+            width: inherit;
+            position: relative;
 
-        <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        }
+        .men-collection {
+            float: right;
+            margin: 75px 0;
+        }
+        .women-collection {
+            margin: 75px 0;
+        }
+        .collection-name , .collection {
+            font-size: 25px;
+        }
+        .exp-clothes-action {
+            margin: 5px 0 0 0;
+        }
+        .left-collection-content , .right-collection-content{
+            display: inline-block;
+            margin:0 65px ;
+        }
+        .best-prdct {
+            display: block;
+            margin: 0 auto;
+            width: inherit;
+        }
+        .best-prdct-card {
+            display: inline-block;
+            margin: 0 25px;
+        }
+        .best-prdct-img {
+            width: 230px;
+            height: auto;
+        }
+        .best-prdct-title {
+            text-align: center;
+            padding: 30px;
+        }
+        .best-prdct-name {
+            margin: 4px 0;
+        }
+        .best-prct-section {
+            height: 100vh;
+        }
+        .brand-img {
+            width: 160px;
+            height: auto;
+            margin: 20px;
+        }
+        .even-brand-img {
+            margin: 30px 0 0 0;
+        }
+        .brand-display {
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-ctn wrap-ctn">
+            <div class="nav-section">
+                <ul>
+                    <div class="logo">
+                        <li class="nav-tabs"><a>Shop.</a></li>
+                    </div>
+                    <div class="navs">
+                        <li class="nav-tabs"><a>Home</a></li>
+                        <li class="nav-tabs"><a>New</a></li>
+                        <li class="nav-tabs"><a>Collection</a></li>
+                        <li class="nav-tabs"><a>Products</a></li>
+                        <li class="nav-tabs"><a>i</a></li>
+                    </div>
+       
+                </ul>
+            </div>
+            <div class="main-section">
+                <div class="left-section">
+                    <div class="heading"> New Clothing </div>
+                    <div class="heading"> Collection </div>
+                    <p class="main-desc">
+                        The new collection of clothing from the best brands this year
+                    </p>
+                    <button class="explore-btn">
+                        Explore ->
+                    </button>
+                </div>
+                <div class="right-section">
+                    <div class="home-imgs-ctn">
+                        <!-- <div class="img-ctn"> -->
+                            <img src="./img/home1.png" class="main-img" alt="loading...">
+                            <!-- </div> -->
+                            <!-- <div class="img-ctn"> -->
+                                <img src="./img/home2.png" class="merging-img" alt="loading...">
+                            <!-- </div> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    </body>
+    </div>
+
+        <div class="categories-section">
+            <div class="wrap-ctn">
+                <div class="categories-title">
+                    New Categories
+                </div>
+                <div class="prdct-ctn">
+                    <div class="prdct-card">
+                        <img src="./img/new1.png" alt="" class="prdct-img">
+                        <div class="prdct-card-footer">
+                            <div class="left-card-content">
+                                <div class="prdct-card-title">Hoodie & Sweatshirt</div>
+                                <div class="prdct-card-subtitle">Winter collections</div>
+                            </div>
+                            <div class="right-card-content"> <div class="prdct-card-action">-></div> </div>
+                        </div>                        
+                    </div>
+                    <div class="prdct-card">
+                        <img src="./img/new2.png" alt="" class="prdct-img">
+                        <div class="prdct-card-footer">
+                            <div class="left-card-content">
+                                <div class="prdct-card-title">Pants & Jackets</div>
+                                <div class="prdct-card-subtitle">Winter collections</div>
+                            </div>
+                            <div class="right-card-content"> <div class="prdct-card-action">-></div> </div>
+
+                        </div>                        
+                    </div>
+                    <div class="prdct-card">
+                        <img src="./img/new3.png" alt="" class="prdct-img">
+                        <div class="prdct-card-footer">
+                            <div class="left-card-content">
+                                <div class="prdct-card-title">Coats & Coat Sets</div>
+                                <div class="prdct-card-subtitle">Winter collections</div>
+                            </div>
+                            <div class="right-card-content"> <div class="prdct-card-action">-></div> </div>
+
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="collection-section">
+            <div class="wrap-ctn">
+                <div class="collection-content">
+                    <div class="left-collection-content">
+                        <div class="left-top-content">
+                            <div class="men-collection">
+                                <div class="collection-name">Men</div>
+                                <div class="collection">Collection</div>
+                                <div class="exp-clothes-action">Explore clothes -></div>
+                            </div>
+                        </div>
+                        <img src="./img/collection2.png" alt="" class="collection-img">
+
+                 
+                    </div>
+                    <div class="right-collection-content">
+                        <img src="./img/collection1.png" alt="" class="collection-img">
+
+                        <div class="right-top-content">
+
+                            <div class="women-collection">
+                                <div class="collection-name">Women</div>
+                                <div class="collection">Collection</div>
+                                <div class="exp-clothes-action">Explore clothes -></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="best-prct-section">
+            <div class="wrap-ctn">
+                <div class="best-prdct-title">
+                    Best Products
+                </div>
+                <div class="best-prdct">
+                    <div class="best-prdct-card">
+                        <img class="best-prdct-img" src="./img/product4.png" alt="">
+                        <div class="best-prdct-footer">
+                            <div class="best-prdct-name">Blue Sport Pants</div>
+                            <div class="best-prdct-price">$69.99</div>
+                        </div>
+                    </div>
+                    <div class="best-prdct-card">
+                        <img class="best-prdct-img" src="./img/product3.png" alt="">
+                        <div class="best-prdct-footer">
+                            <div class="best-prdct-name">Gotland black Jackets</div>
+                            <div class="best-prdct-price">$124.99</div>
+                        </div>
+                    </div>
+                    
+                        <div class="best-prdct-card">
+                            <img class="best-prdct-img" src="./img/product2.png" alt="">
+                            <div class="best-prdct-footer">
+                                <div class="best-prdct-name">Black Sports Shorts</div>
+                                <div class="best-prdct-price">$34.99</div>
+                            </div>
+                        </div>
+    
+                    </div>
+
+                </div>
+
+            </div>
+         
+        </div>
+
+        <div class="final-section">
+            <div class="wrap-ctn">
+                <div class="brand-display">
+                    <img src="./img/logo1.png" alt="" class="brand-img">
+                    <img src="./img/logo2.png" alt="" class="brand-img even-brand-img">
+                    <img src="./img/logo3.png" alt="" class="brand-img">
+                    <img src="./img/logo4.png" alt="" class="brand-img even-brand-img">
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+</body>
 </html>
