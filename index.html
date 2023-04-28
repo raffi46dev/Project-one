@@ -23,7 +23,7 @@
             margin: auto;
             /* background-color: red; */
         }
-        ul {
+        .nav-section ul {
             list-style: none;
             display:flex;
             flex-direction: row;
@@ -178,12 +178,12 @@
             margin: 4px 0;
         }
         .best-prct-section {
-            height: 100vh;
+            height: 80vh;
         }
         .brand-img {
             width: 160px;
             height: auto;
-            margin: 20px;
+            margin: 0 40px 0 40px;
         }
         .even-brand-img {
             margin: 30px 0 0 0;
@@ -193,6 +193,27 @@
             position: relative;
             margin: 0 auto;
             width: inherit;
+        }
+        .footer-ctn {
+            display: block;
+            justify-content: space-evenly;
+            margin: 90px auto 10px auto;
+        }
+        .footer-content {
+
+            width: 150px;
+            display: inline-block;
+            margin: 0 25px 0 0;
+        }
+        .footer-title {
+            padding: 0 0 10px 0;
+        }
+        .footer-list li{
+            display: block;
+            margin: 8px 0px;
+        }
+        .footer-max-width {
+            width: 220px;
         }
     </style>
 </head>
@@ -359,10 +380,46 @@
                     <img src="./imgs/logo3.png" alt="" class="brand-img">
                     <img src="./imgs/logo4.png" alt="" class="brand-img even-brand-img">
                 </div>
-            </div>
-            <div>
                 
             </div>
+            <div class="footer-ctn wrap-ctn">
+                <div class="footer-content footer-max-width">
+                    <div class="footer-title">Shop.</div>
+                    Committed to bringing you the best clothing from popular brands.
+                </div>
+                <div class="footer-content">
+                    <div class="footer-title">Company</div>
+                    <ul class="footer-list">
+                        <li>Shop</li>
+                        <li>Category</li>
+                        <li>Contact info</li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-title">Blog</div>
+                    <ul class="footer-list">
+                        <li>Events</li>
+                        <li>Popular news</li>
+                        <li>Recent news</li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-title">Office</div>
+                    <ul class="footer-list">
+                        <li>Monday - Saturday</li>
+                        <li>9AM - 10PM</li>
+                    </ul>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-title">Contact-us</div>
+                    <div class="social-media-icon-group">
+                        <div class="social-media-icon"></div>
+                        <div class="social-media-icon"></div>
+                        <div class="social-media-icon"></div>
+                    </div>
+                </div>
+            </div>
+           
 
         </div>
 
