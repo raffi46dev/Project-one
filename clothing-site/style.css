@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: rgba(128, 128, 128, 0.6); */
+    font-family: 'Lora', serif;
+}
+.hero-section {
+    background-color: rgba(128, 128, 128, 0.6);
+    height: 100vh;
+}
+.wrap-ctn {
+    width: 75%;
+    margin: auto;
+    /* background-color: red; */
+}
+.nav-section ul {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navs li {
+    display: inline-block;
+    margin: 20px;
+}
+.logo {
+    margin: 20px 10px;
+}
+.navs {
+    margin-right: 80px;
+}
+.heading {
+    font-size: 65px;
+}
+
+.explore-btn {
+    background-color: transparent;
+    border: none;
+    padding: 4px 8px;
+}
+img {
+    
+    /* object-fit: contain; */
+}
+.main-section {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+
+}
+.main-desc {
+    margin: 20px 0;
+    width: 276px;
+    font-size: 18px;
+}
+/* .left-section, .right-section {
+    display: inline-block;
+} */
+.home-imgs-ctn {
+    position: relative;
+    margin: 0 70px;
+}
+.main-img {
+    width: 300px;
+    height: 400px;
+}
+.merging-img {
+    position: absolute;
+    top: 200px;
+    right: 180px;
+    width: auto;
+    height: 300px;
+}
+.left-section {
+    margin: auto 0;
+}
+.categories-section {
+    background-color: white;
+}
+.categories-title {
+    text-align: center;
+    padding: 30px;
+}
+.prdct-card {
+    display: inline-block;
+    margin: 12px;
+
+}
+.prdct-ctn {
+    display: block;
+    margin: auto;
+    height: 100vh;
+    width: inherit;
+}
+.prdct-img , .collection-img{
+    width: 250px;
+    height: auto;
+}
+.prdct-card-footer {
+    padding: 10px;
+    /* background-color: blue; */
+    position: relative;
+    display: block;
+}
+.prdct-card-subtitle {
+    margin: 8px 0 0 0;
+}
+.left-card-content {
+    display: inline-block;
+}
+.right-card-content {
+    float: right;
+    /* vertical-align: middle; */
+}
+.prdct-card-action {
+    
+    vertical-align: middle;
+    margin: 10px 0;
+
+}
+.collection-content {
+
+                /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 40px; */
+    margin: auto;
+    display: block;
+    width: inherit;
+    position: relative;
+
+}
+.men-collection {
+    float: right;
+    margin: 75px 0;
+}
+.women-collection {
+    margin: 75px 0;
+}
+.collection-name , .collection {
+    font-size: 25px;
+}
+.exp-clothes-action {
+    margin: 5px 0 0 0;
+}
+.left-collection-content , .right-collection-content{
+    display: inline-block;
+    margin:0 65px ;
+}
+.best-prdct {
+    display: block;
+    margin: 0 auto;
+    width: inherit;
+}
+.best-prdct-card {
+    display: inline-block;
+    margin: 0 25px;
+}
+.best-prdct-img {
+    width: 230px;
+    height: auto;
+}
+.best-prdct-title {
+    text-align: center;
+    padding: 30px;
+}
+.best-prdct-name {
+    margin: 4px 0;
+}
+.best-prct-section {
+    height: 80vh;
+}
+.brand-img {
+    width: 160px;
+    height: auto;
+    margin: 0 40px 0 40px;
+}
+.even-brand-img {
+    margin: 30px 0 0 0;
+}
+.brand-display {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: inherit;
+}
+.footer-ctn {
+    display: block;
+    justify-content: space-evenly;
+    margin: 90px auto 10px auto;
+}
+.footer-content {
+
+    width: 150px;
+    display: inline-block;
+    margin: 0 25px 0 0;
+}
+.footer-title {
+    padding: 0 0 10px 0;
+}
+.footer-list li{
+    display: block;
+    margin: 8px 0px;
+}
+.footer-max-width {
+    width: 220px;
+}
+
+/* Media Queries */
+@media screen and (max-width:763px) {
+    .navs {
+        display: none;
+    }
+}
