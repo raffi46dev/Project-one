@@ -12,9 +12,15 @@ body {
     height: 100vh;
 }
 .wrap-ctn {
-    width: 75%;
+    max-width: 960px;
     margin: auto;
     /* background-color: red; */
+}
+.hero-section {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+.nav-section {
+    margin: 0 30px;
 }
 .nav-section ul {
     list-style: none;
@@ -35,7 +41,6 @@ body {
 .heading {
     font-size: 65px;
 }
-
 .explore-btn {
     background-color: transparent;
     border: none;
@@ -46,15 +51,18 @@ img {
     /* object-fit: contain; */
 }
 .main-section {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px auto;
-
+        /* width: 85%; */
+        display: flex;
+        justify-content: space-between;
+        /* margin: 50px auto; */
+        /* display: grid; */
+        /* grid-template-columns: repeat(2,1fr); */
+        justify-content: center;
+    margin: 60px 0 0 0;
 }
 .main-desc {
     margin: 20px 0;
-    width: 276px;
+    width: 300px;
     font-size: 18px;
 }
 /* .left-section, .right-section {
@@ -71,8 +79,9 @@ img {
 .merging-img {
     position: absolute;
     top: 200px;
-    right: 180px;
-    width: auto;
+    left: -110px;
+    /* right: 56px; */
+    /* width: auto; */
     height: 300px;
 }
 .left-section {
@@ -86,19 +95,27 @@ img {
     padding: 30px;
 }
 .prdct-card {
-    display: inline-block;
-    margin: 12px;
+    /* display: inline-block; */
+    /* margin: 12px; */
 
 }
 .prdct-ctn {
-    display: block;
-    margin: auto;
+    display: grid;
+    /* margin: 0 auto; */
     height: 100vh;
-    width: inherit;
+    /* width: inherit; */
+    grid-template-columns: repeat(auto-fit, minmax(auto,220px));
+    justify-content: center;
+    /* align-items: center; */
+    gap: 90px;
 }
-.prdct-img , .collection-img{
-    width: 250px;
+.collection-img{
+    margin: 60px 0 0 0;
+    width: 330px;
     height: auto;
+}
+.left-collection-content .collection-img {
+    float:right;
 }
 .prdct-card-footer {
     padding: 10px;
@@ -122,23 +139,26 @@ img {
     margin: 10px 0;
 
 }
+.collection-section {
+    height: 100vh;
+}
 .collection-content {
-
-                /* display: flex; */
+    /* display: flex; */
     /* justify-content: center; */
-    /* gap: 40px; */
-    margin: auto;
-    display: block;
-    width: inherit;
-    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
 
 }
-.men-collection {
+.left-top-content {
+    text-align: right;
+}
+/* .men-collection {
     float: right;
     margin: 75px 0;
-}
+}*/
 .women-collection {
-    margin: 75px 0;
+    margin: 60px 0 0 0;
 }
 .collection-name , .collection {
     font-size: 25px;
@@ -146,18 +166,20 @@ img {
 .exp-clothes-action {
     margin: 5px 0 0 0;
 }
-.left-collection-content , .right-collection-content{
+/* .left-collection-content , .right-collection-content{
     display: inline-block;
     margin:0 65px ;
+} */
+.prdct-img {
+    width: 220px;
+    height: auto;
 }
 .best-prdct {
-    display: block;
-    margin: 0 auto;
-    width: inherit;
+    margin: 55px 0 0 0;
 }
 .best-prdct-card {
+    margin: 0 35px;
     display: inline-block;
-    margin: 0 25px;
 }
 .best-prdct-img {
     width: 230px;
@@ -171,12 +193,12 @@ img {
     margin: 4px 0;
 }
 .best-prct-section {
-    height: 80vh;
+    height: 100vh;
 }
 .brand-img {
     width: 160px;
     height: auto;
-    margin: 0 40px 0 40px;
+    margin: 0 40px 30px 40px
 }
 .even-brand-img {
     margin: 30px 0 0 0;
@@ -193,7 +215,6 @@ img {
     margin: 90px auto 10px auto;
 }
 .footer-content {
-
     width: 150px;
     display: inline-block;
     margin: 0 25px 0 0;
@@ -207,6 +228,10 @@ img {
 }
 .footer-max-width {
     width: 220px;
+}
+.footer-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /* Media Queries */
